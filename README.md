@@ -1,2 +1,3 @@
-# react-course
-My Learning Journey
+React Course
+============
+My Learning Journey of React
