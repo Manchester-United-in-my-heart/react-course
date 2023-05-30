@@ -1,0 +1,26 @@
+[
+  {
+    "name":"BMI",
+    "description": "Body Mass Index"
+  },
+  {
+    "name":"BMR",
+    "description": "Basal Metabolic Rate"
+  },
+  {
+    "name":"TDEE",
+    "description": "Total Daily Energy Expenditure"
+  },
+  {
+    "name":"FFMI",
+    "description": "Fat Free Mass Index"
+  },
+  {
+    "name": "LBM",
+    "description": "Lean Body Mass"
+  },
+  {
+    "name": "IBW",
+    "description": "Ideal Body Weight"
+  }
+]
