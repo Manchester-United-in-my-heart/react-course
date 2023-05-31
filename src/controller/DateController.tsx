@@ -13,12 +13,19 @@ export const DateController = () =>
   const [CellCalendarState, setCellCalendarState] = useState<ICellCalendarProps>(CellCalendarInstance)
   const PreviousHandler= () =>
   {
-    setCellCalendarState({
-      date: CellCalendarState.date - 1,
-      month: CellCalendarState.month,
-      year: CellCalendarState.year,
-      day: WeeklyDay[(WeeklyDay.indexOf(CellCalendarState.day) - 1 + WeeklyDay.length) % WeeklyDay.length]
-    })
+      // date: CellCalendarState.date - 1,
+      // month: CellCalendarState.month,
+      // year: CellCalendarState.year,
+      // day: WeeklyDay[(WeeklyDay.indexOf(CellCalendarState.day) - 1 + WeeklyDay.length) % WeeklyDay.length]
+
+      // alternative approach
+      setCellCalendarState((prevState) => {
+        return {
+        ...CellCalendarState,
+        date: prevState.date - 1,
+        day: WeeklyDay[(WeeklyDay.indexOf(prevState.day) - 1 + WeeklyDay.length) % WeeklyDay.length]
+        }
+      })
   }
   const NextHandler= () =>
   {
