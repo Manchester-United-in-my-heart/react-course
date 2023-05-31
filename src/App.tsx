@@ -1,8 +1,8 @@
-import {DateController} from "./controller/DateController.tsx";
+import {FormController} from "./controller/FormController.tsx";
 
 function App() {
   return (
-    <DateController/>
+    <FormController/>
   )
 }
 
