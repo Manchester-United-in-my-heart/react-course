@@ -12,7 +12,6 @@ export const FormController = () =>
     email: '',
     DOB: ''
   })
-  console.log(input)
   const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) =>
   {
     event.preventDefault()

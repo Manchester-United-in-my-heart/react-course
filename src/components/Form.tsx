@@ -1,6 +1,4 @@
 import {IInput} from "../controller/FormController.tsx";
-import {useState} from "react";
-
 export interface IFormProps {
   /**
    *
@@ -14,14 +12,13 @@ export const Form = (props : IFormProps) =>
 
   const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) =>
   {
-    props.setter((prevState) =>
+    props.setter((prevState: any) =>
     {
       return {
         ...prevState,
         [event.target.id]: event.target.value
       }
     })
-    console.log(props.input)
   }
 
   return (
